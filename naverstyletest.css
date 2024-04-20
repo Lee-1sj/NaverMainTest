@@ -89,6 +89,7 @@ body {
 .header3>div>span {
   font-size: 10px;
 }
+
 /* main 구간 */
 main {
   width: 80%;
@@ -99,6 +100,7 @@ main {
   justify-content: flex-start;
   align-items: center;
 }
+
 /* main 의 section 구간 */
 main>section {
   width: 60%;
@@ -116,16 +118,19 @@ main>section>div {
   padding: 10px;
 }
 
+/* section의 subside1 */
 main>section>div.subside1 {
   width: 100%;
   height: 6%;
 }
 
-main>section>div.subside1>img {
+.subside1>img {
   width: 100%;
   height: 100%;
+  border-radius: 15px;
 }
 
+/* section의 article1 */
 main>section>div.article1 {
   width: 100%;
   height: 30%;
@@ -133,9 +138,10 @@ main>section>div.article1 {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  border: 1px solid rgb(223, 223, 223);
 }
 
-main>section>div.article1>div.article1-header1 {
+.article1>div.article1-header1 {
   font-size: 16px;
   width: 100%;
   height: 40px;
@@ -145,63 +151,66 @@ main>section>div.article1>div.article1-header1 {
   position: relative;
 }
 
-main>section>div.article1>div.article1-header1>div>i {
+.article1-header1>div>i {
   color: red;
 }
 
-main>section>div.article1>div.article1-header1>div.article1-subside {
+.article1-subside {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-main>section>div.article1>div.article1-header1>div.article1-subside>img {
+.article1-subside>img {
   position: absolute;
   right: 5px;
   width: 20%;
 }
 
-main>section>div.article1>div.article1-header2 {
+.article1-header2 {
   width: 100%;
   height: 30px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  border: 1px solid rgb(223, 223, 223);
 }
 
-main>section>div.article1>div.article1-header2>span {
+.article1-header2>span {
   font-size: 15px;
 }
 
-main>section>div.article1>div.article1-header2>input {
+.article1-header2>input {
   width: 60%;
   border-width: 0px;
   font-size: 13px;
 }
 
-main>section>div.article1>div.article1-header2>input:focus {
+.article1-header2>input:focus {
   outline-width: 0px;
 }
 
-div.article1-section {
+.article1-section {
   width: 100%;
   height: 60%;
 }
 
-div.article1-section>table{
+.article1-section>table{
   width: 100%;
   height: 100%;
+  border: 1px solid rgb(223, 223, 223);
 }
 
-div.article1-section>table>tr,td {
+.article1-section>table>tr,td {
   width: 25%;
   height: 50%;
 }
 
-div.article1-section>table img {
+.article1-section>table img {
   width: 90%;
   height: 80%;
   text-align: center;
+  border-radius: 10px;
 }
 
 div.miniArticle {
@@ -258,6 +267,7 @@ div.article1-footer {
   font-weight: 900;
 }
 
+/* section의 article2 */
 .article2-nav>ul>li {
   display: inline;
   list-style: none;
@@ -289,6 +299,7 @@ div.article1-footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 1px solid rgb(223, 223, 223);
 }
 
 .shoppingList>span {
@@ -310,6 +321,7 @@ div.article1-footer {
 .shoppingAside {
   width: 70%;
   height: 100%;
+  border: 1px solid rgb(223, 223, 223);
 }
 
 .shoppingAside>table {
@@ -319,6 +331,7 @@ div.article1-footer {
 
 .shoppingAside img {
   width: 100%;
+  border-radius: 10px;
 }
 
 tr#picture1,tr#picture2 {
@@ -336,6 +349,7 @@ tr#comment1,tr#comment2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  border: 1px solid rgb(223, 223, 223);
 }
 
 .shoppingAside2>input {
@@ -348,6 +362,11 @@ div.shoppingFooter {
   height: 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.footernav {
+  display: flex;
   align-items: center;
 }
 
@@ -372,8 +391,10 @@ div.shoppingFooter {
 .shoppingFooter > span {
   border: 2px solid rgb(223, 223, 223);
   border-radius: 5px;
+  color: #505050;
 }
 
+/* section의 article3 */
 .article3 {
   display: flex;
   flex-direction: column;
@@ -404,6 +425,7 @@ div.shoppingFooter {
 
 .article3-health {
   height: 80%;
+  border: 1px solid rgb(223, 223, 223);
 }
 
 table#health-table1 {
@@ -417,6 +439,7 @@ tr#picture3 {
 
 tr#picture3 img {
   width: 98%;
+  border-radius: 10px;
 }
 
 tr#comment3 td {
@@ -441,6 +464,7 @@ table#health-table2 {
 
 table#health-table2 img {
   width: 98%;
+  border-radius: 10px;
 }
 
 .table-section {
@@ -465,18 +489,18 @@ table#health-table2 img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .article3-footer i {
   margin-top: 2px;
   color: rgb(0, 187, 107);
 }
+
 /* main의 aside 구간 */
 main>aside {
   width: 40%;
   height: 100%;
-  border: 2px solid yellow;
   padding: 0 10px;
   margin-left: 10px;
   display: flex;
@@ -489,6 +513,7 @@ aside>div {
   border-collapse: collapse;
   width: 100%;
 }
+
 /* asdide 로그인 */
 .login {
   height: 7%;
@@ -499,9 +524,10 @@ aside>div {
 }
 
 .login span {
-  font-size: 13px;
+  font-size: 15px;
   height: 20%;
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .login>div {
@@ -517,7 +543,7 @@ aside>div {
   height: 70%;
   background-color: rgb(0, 187, 107);
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 20px;
   color: white;
   padding: auto 0;
   display: flex;
@@ -526,7 +552,7 @@ aside>div {
 }
 
 .login-list {
-  font-size: 11px;
+  font-size: 15px;
   padding: 0;
   margin: 0;
   height: 20%;
@@ -543,6 +569,7 @@ aside>div {
 li.stick {
   color: #9d9d9d;
 }
+
 /* aside 광고 */
 .advertisement {
   height: 14%;
@@ -580,6 +607,7 @@ div#kt {
 .advertisement>input {
   width: 95%;
   height: 60%;
+  border: 1px solid rgb(223, 223, 223);
 }
 
 .ad-footer {
@@ -593,7 +621,7 @@ div#kt {
 .ad-footer1 {
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 14px;
   width: 40%;
 }
 
@@ -602,22 +630,542 @@ div#kt {
   height: 13%;
 }
 
-.ad-footer2 {
-  display: flex;
-  font-size: 12px;
-  width: 30%;
+.ad-footer1>span {
+  margin-left: 5px;
 }
 
-.weather {height: 15%;}
-.stock {height: 15%;}
-.advertisement2 {height: 5%;}
-.widget {height: 35%;}
-.advertisement3 {height: 5%;}
+.ad-footer2 {
+  font-size: 14px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.ad-footer2>i {
+  margin-left: 5px;
+}
+
+/* aside의 weather */
+.weather {
+  height: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.weather-header {
+  width: 95%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+span#title {
+  font-size: 16px;
+}
+
+.weather-header> span#check, i {
+  font-size: 14px;
+  color: #505050;
+}
+
+.weather-header>i {
+  margin-left: 7px;
+}
+
+span#location {
+  font-size: 14px;
+  color: #505050;
+  position: absolute;
+  right: 1px;
+}
+
+.weather>input {
+  width: 95%;
+  height: 70%;
+  border: 1px solid rgb(223, 223, 223);
+}
+
+/* aside의 stock */
+.stock {
+  height: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.stock-header {
+  width: 95%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stock-left>span {
+  font-size: 16px;
+}
+
+.stock-left>i {
+  font-size: 14px;
+  color: #505050;
+}
+
+.stock-right>span, i {
+  font-size: 14px;
+  color: #505050;
+}
+
+.stock>input {
+  width: 95%;
+  height: 70%;
+  border: 1px solid rgb(223, 223, 223);
+}
+
+/* aside의 advertisement2 */
+.advertisement2 {
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advertisement2>img {
+  width: 95%;
+}
+
+/* aside의 widget */
+.widget {
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* widget의 header */
+.widget-header {
+  width: 95%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.widget-header>span {
+  font-size: 16px;
+}
+
+/* widget의 section1 */
+.widget-section1 {
+  border: 1px solid rgb(223, 223, 223);
+  width: 95%;
+  height: 25%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.widget-left1 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;  
+}
+
+.widget-right1 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.top {
+  width: 99%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top>span {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+div.top>.date{
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.date>p {
+  margin: 0;
+}
+
+.date>p#monthday {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+p#day {
+  font-size: 14px;
+}
+
+.memo {
+  width: 90%;
+  height: 90%;
+}
+
+.memo-top {
+  width: 100%;
+  height: 30%;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(0, 187, 107);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom {
+  width: 99%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom>a {
+  color: #505050;
+  font-size: 14px;
+}
+
+/* widget의 section2 */
+.widget-section2 {
+  border: 1px solid rgb(223, 223, 223);
+  width: 95%;
+  height: 25%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top-header {
+  width: 90%;
+}
+
+.widget-section2 input {
+  width: 60%;
+  height: 100%;
+}
+
+.top-header>div {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+div#translate {
+  width: 80%;
+  height: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #00A2FF;
+  border-radius: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-header2 {
+  width: 90%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+p#p {
+  width: 95%;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.bottom-search {
+  width: 99%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bottom-search>i {
+  font-size: 18px;
+}
+
+/* widget의 section3 */
+.widget-section3 {
+  border: 1px solid rgb(223, 223, 223);
+  width: 95%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget-section3>img {
+  width:80%
+}
+
+/* widget의 footer */
+.widget-footer {
+  width: 95%;
+  height: 8%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.naver {
+  width: 6%;
+  background-color: rgb(0, 187, 107);
+  border-radius: 4px;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#navertext {
+  margin-left: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+div#navertext1 {
+  margin-left: 8px;
+  font-size: 15px;
+}
+
+.widget-footer>i {
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+}
+
+/* aside의 advertisement3 */
+.advertisement3 {
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advertisement3>img {
+  width: 98%;
+}
 
 /* footer 구간 */
 footer {
-  border: 1px dotted black;
-  width: 84%;
-  height: 500px;
+  width: 100%;
+  height: 400px;
   margin: 0 auto;
+  background-color: #f5f6f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* footer1 */
+.footer1 {
+  width: 95%;
+  height: 30%;
+}
+
+table#footer-table {
+  width: 100%;
+  height: 100%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+
+}
+
+td.table-image {
+  width: 16%;
+}
+
+td.table-image>img {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 15px;
+}
+
+td.table-content {
+  width: 15%;
+}
+
+div.content1 {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #a0adb2;
+  border-radius: 6px;
+  width: 40%;
+  padding-bottom: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.content2 {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+
+div.content3>p {
+  margin: 0;
+  font-size: 13px;
+}
+
+div.content4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #a0adb2;
+  border-radius: 6px;
+  width: 60%;
+  padding-bottom: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer2 */
+.footer2 {
+  width: 95%;
+  height: 10%;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div#footer-nav {
+  display: flex;
+  align-items: center;
+}
+
+div#footer-nav>i {
+  padding-left: 5px;
+}
+
+/* footer3 */
+.footer3 {
+  width: 95%;
+  height: 20%;
+  position: relative;
+}
+
+.footer3-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40%;
+}
+
+.footer3-div>span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+ul.footer3-list>li {
+  display: inline;
+  list-style: none;
+  font-size: 14px;
+  color: #505050;
+}
+
+.footer3-div2 {
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer3-forspan {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.footer3-forimg>img {
+  width: 90%;
+}
+
+span.span1 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+span.span2 {
+  font-size: 14px;
+  color: #505050;
+}
+
+/* footer4 */
+.footer4 {
+  width: 95%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li#personalInfo {
+  font-weight: bold;
+}
+
+.footer4>span {
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.fixedFunc {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
+.fixedFunc>a>i {
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: white;
+  color: #9d9d9d;
+  border: 2px solid #a0adb2
+}
+.fixedFunc>i {
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: white;
+  color: #9d9d9d;
+  border: 2px solid #a0adb2
 }

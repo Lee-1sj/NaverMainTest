@@ -100,7 +100,7 @@
         <div class="article1-header2">
           <span>분야별 뉴스<i class="fa-solid fa-caret-down"></i></span>
           <input type="text" placeholder="SBS뉴스 &nbsp;&nbsp;&nbsp;가나다라마바사아">
-          <span><b>뉴스홈</b></span>
+          <span><strong>뉴스홈</strong></span>
         </div>
         <div class="article1-section">
           <table>
@@ -282,7 +282,7 @@
         </div>
         <div class="shoppingFooter">
           <div></div>
-          <div>
+          <div class="footernav">
             <i class="fa-solid fa-caret-left"></i>
             <span id="span1">&nbsp;&nbsp;&nbsp;쇼핑아이템&nbsp;</span>
             <span id="span2">더보기&nbsp;</span>
@@ -432,16 +432,217 @@
           </div>
         </div>
       </div>
-      <div class="weather">3</div>
-      <div class="stock">4</div>
-      <div class="advertisement2">5</div>
-      <div class="widget">6</div>
-      <div class="advertisement3">7</div>
+      <div class="weather">
+          <div class="weather-header">
+            <span id="title"><strong>날씨</strong></span>
+            <i class="fa-solid fa-temperature-three-quarters"></i>
+            <span id="check">예보 비교</span>
+            <span id="location">서울시 송파구</span>
+          </div>
+          <input type="image" src="./weather.png" alt="날씨">
+      </div>
+      <div class="stock">
+        <div class="stock-header">
+          <div class="stock-left">
+            <span><strong>증시</strong></span>
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+          <div class="stock-right">
+            <span>04.20. 18:59</span>
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+          </div>
+        </div>
+        <input type="image" src="./stock.png" alt="증시">
+      </div>
+      <div class="advertisement2">
+        <img src="./AD2.png" alt="광고">
+      </div>
+      <div class="widget">
+        <div class="widget-header">
+          <span><strong>위젯 보드</strong></span>
+        </div>
+        <div class="widget-section1">
+          <div class="widget-left1">
+            <div class="top">
+              <span>캘린더</span>
+              <div class="date">
+                <p id="monthday">4.20</p>
+                <p id="day">토</p>
+              </div>
+            </div>
+            <div class="bottom">
+              <a href="#">로그인하기</a>
+            </div>
+          </div>
+          <div class="widget-right1">
+            <div class="top">
+              <div class="memo">
+                <div class="memo-top">
+                  <div>메모</div>
+                  <div>&nbsp;</div>
+                </div>
+                <div class="memo-bottom"></div>
+              </div>
+            </div>
+            <div class="bottom">
+              <a href="#">로그인하기</a>
+            </div>
+          </div>
+        </div>
+        <div class="widget-section2">
+          <div class="widget-left1">
+            <div class="top">
+              <div class="top-header">
+                <div>papago</div>
+              </div>
+              <input type="image" src="./papagoLogo.png" alt="파파고">
+            </div>
+            <div class="bottom">
+              <div id="translate">번역하기</div>
+            </div>
+          </div>
+          <div class="widget-right1">
+            <div class="top">
+              <div class="top-header2">
+                <div>영어사전</div>
+              </div>
+              <p id="p">What's your skin type?</p>  
+            </div>
+            <div class="bottom-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+        <div class="widget-section3">
+          <img src="./vibe.png" alt="vibe">
+        </div>
+        <div class="widget-footer">
+          <div class="naver">N</div>
+          <div id="navertext">모바일 네이버 메인</div>
+          <div id="navertext1">열기</div>
+          <i class="fa-solid fa-caret-right"></i>
+        </div>
+      </div>
+      <div class="advertisement3">
+        <img src="./AD3.png" alt="광고">
+      </div>
     </aside>
-  </main>
+  </main> 
   <footer>
-    footer
+    <div class="footer1">
+      <table id="footer-table">
+        <tr>
+          <td class="table-image">
+            <img src="./foot1.jpg" alt="광고">
+          </td>
+          <td class="table-content">
+            <div class="content1">메리츠화재</div>
+            <div class="content2">펫보험 페퍼민트 다이렉트</div>
+            <div class="content3"><p>월3만원 이상 가입 시 N포인트최대3만원(2회차납입시)</p></div>
+          </td>
+          <td class="table-image">
+            <img src="./foot2.jpg" alt="광고">  
+          </td>
+          <td class="table-content">
+            <div class="content4">네이버 열린연단</div>
+            <div class="content2">제왕적 대통령을 넘어</div>
+            <div class="content3"><p>퇴행 중인 민주주의 사면권 거부권 남용 관련</p></div>
+          </td>
+          <td class="table-image">
+            <img src="./foot3.png" alt="광고">
+          </td>
+          <td class="table-content">
+            <div class="content1">쥬니버스쿨</div>
+            <div class="content2">유아기 사회성 학습 노하우</div>
+            <div class="content3"><p>쥬니버스쿨과 함께 알아보고 아이 발달점검 기회도 가져보세요</p></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="footer2">
+      <div>공지사항</div>
+      <div id="footer-nav">
+        <div>서비스 전체보기</div>
+        <i class="fa-solid fa-caret-right"></i>
+      </div>
+    </div>
+    <div class="footer3">
+      <div class="footer3-div">
+        <span>Partners</span>
+        <ul class="footer3-list">
+          <li>프로젝트 꽃</li>
+          <li class="stick">&#10072;</li>
+          <li>네이버 비즈니스</li>
+          <li class="stick">&#10072;</li>
+          <li>네이버 비즈니스 스쿨</li>
+          <li class="stick">&#10072;</li>
+          <li>네이버 광고</li>
+          <li class="stick">&#10072;</li>
+          <li>스토어 개설</li>
+          <li class="stick">&#10072;</li>
+          <li>지역업체 등록</li>
+          <li class="stick">&#10072;</li>
+          <li>엑스퍼트 등록</li>
+        </ul>
+      </div>
+      <div class="footer3-div">
+        <span>Developers</span>
+        <ul class="footer3-list">
+          <li>네이버 개발자 센터</li>
+          <li class="stick">&#10072;</li>
+          <li>오픈 API</li>
+          <li class="stick">&#10072;</li>
+          <li>오픈소스</li>
+          <li class="stick">&#10072;</li>
+          <li>네이버 D2</li>
+          <li class="stick">&#10072;</li>
+          <li>네이버 D2SF</li>
+          <li class="stick">&#10072;</li>
+          <li>네이버 랩스</li>
+        </ul>
+      </div>
+      <div class="footer3-div2">
+        <div class="footer3-forspan">
+          <span class="span1">웨일 브라우저</span>
+          <span class="span2">이용안내</span>
+        </div>
+        <div class="footer3-forimg">
+          <img src="./whaleLogo.png" alt="네이버웨일로고">
+        </div>
+        <div class="footer3-forspan">
+          <span class="span1">기업 사이트</span>
+          <span class="span2">바로가기</span>
+        </div>
+        <div class="footer3-forimg">
+          <img src="./naverLogo.png" alt="네이버로고">
+        </div>
+      </div>
+    </div>
+    <div class="footer4">
+      <ul class="footer3-list">
+        <li>회사소개</li>
+        <li class="stick">&#10072;</li>
+        <li>인재채용</li>
+        <li class="stick">&#10072;</li>
+        <li>제휴제안</li>
+        <li class="stick">&#10072;</li>
+        <li>이용약관</li>
+        <li class="stick">&#10072;</li>
+        <li id="personalInfo">개인정보처리방침</li>
+        <li class="stick">&#10072;</li>
+        <li>청소년보호정책</li>
+        <li class="stick">&#10072;</li>
+        <li>네이버 정책</li>
+        <li class="stick">&#10072;</li>
+        <li>고객센터</li>
+      </ul>
+      <span>&#169; NAVER Corp.</span>
+    </div>
   </footer>
+  <div class="fixedFunc">
+    <a href="#"><i class="fa-solid fa-angles-up"></i></a>
+    <i class="fa-solid fa-gear"></i>
+  </div>
 </body>
 
 </html>
