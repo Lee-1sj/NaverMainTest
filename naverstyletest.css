@@ -1182,6 +1182,7 @@ li#personalInfo {
   font-size: 14px;
 }
 
+/* fixedFunc */
 .fixedFunc {
   position: fixed;
   right: 30px;
